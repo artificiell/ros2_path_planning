@@ -17,6 +17,7 @@ find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 
 # Generate interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -30,7 +31,8 @@ ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
-  ros2_path_planning/planner.py
+  ros2_path_planning/planner_service.py
+  ros2_path_planning/planner_client.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
