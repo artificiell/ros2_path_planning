@@ -32,7 +32,6 @@ ament_python_install_package(${PROJECT_NAME})
 # Install Python executables
 install(PROGRAMS
   ros2_path_planning/planner_service.py
-  ros2_path_planning/planner_client.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
