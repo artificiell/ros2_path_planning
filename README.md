@@ -1,8 +1,6 @@
 # ros2_path_planning
 
-# Path Planning Service
-
-This is a ROS 2 service class that provides a path planning service for generating trajectories given the robot's position, target position, and an occupancy grid map. The service accepts a request containing the robot's position, target position, and the occupancy grid map, and responds with a trajectory.
+This ROS 2 service class provides a path planning service for generating trajectories given the robot's position, target position, and occupancy grid map. The service accepts a request containing the robot's position, target position, and the occupancy grid map and responds with a trajectory.
 
 ## Installation
 
@@ -54,4 +52,3 @@ You can customize the path planning algorithm in the `service_callback` function
 ## License
 
 This package is licensed under the MIT License. See the `LICENSE` file for more details.
-A simple path planning ROS2 package.
