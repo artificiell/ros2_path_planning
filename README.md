@@ -6,6 +6,7 @@ This ROS 2 service class provides a path planning service for generating traject
 
 1. Clone the repository:
    ```
+   cd ~/ros2_ws/src/
    git clone https://github.com/artificiell/ros2_path_planning.git
    ```
 
