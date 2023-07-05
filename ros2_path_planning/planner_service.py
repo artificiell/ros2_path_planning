@@ -82,8 +82,8 @@ class PathPlanningService(Node):
     # Convert grid cell coordinates to position
     def grid_coordinates_to_position(self, x, y, grid_map):
         position = Point()
-        position.x = grid_map.info.origin.position.x + x * grid_map.info.resolution
-        position.y = grid_map.info.origin.position.y + y * grid_map.info.resolution
+        position.x = grid_map.info.origin.position.x + x * grid_map.info.resolution + grid_map.info.resolution / 2
+        position.y = grid_map.info.origin.position.y + y * grid_map.info.resolution + grid_map.info.resolution / 2
         position.z = 0.0
         return position
     
