@@ -29,9 +29,9 @@ class PathPlanningService(Node):
 
 # Main function
 def main(args = None):
+    rclpy.init(args = args)
 
     # Create and run the service
-    rclpy.init(args = args)
     planner = PathPlanningService()
     rclpy.spin(planner)
     rclpy.shutdown()

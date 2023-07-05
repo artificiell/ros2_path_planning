@@ -32,6 +32,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 # Install Python executables
 install(PROGRAMS
   ros2_path_planning/planner_service.py
+  examples/planner_client_customized.py
+  examples/planner_client_timed.py
+  
   DESTINATION lib/${PROJECT_NAME}
 )
 
