@@ -18,10 +18,6 @@ class PathPlanningClientNode(Node):
         # Create service request object 
         self.req = PlanTrajectory.Request()
 
-        # Setup timed callback 
-        timer_period = 0.02  # seconds
-        self.timer = self.create_timer(2.0, self.send_request)
-
     # Send service request
     def send_request(self):
 
