@@ -31,7 +31,7 @@ class PathPlanningClientNode(Node):
 
         # Set the occupancy grid map
         self.req.grid_map = OccupancyGrid()
-
+        
         # Send the request
         future = self.cli.call_async(self.req)
         future.add_done_callback(self.get_response)
